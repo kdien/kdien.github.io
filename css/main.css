@@ -1,19 +1,42 @@
-.navbar .nav-link {
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+body {
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: url('../img/header-bg-blurred.jpg');
+    padding: 8em 1em;
+    text-align: center;
     color: white;
 }
 
-.navbar .nav-link.active {
-    border-bottom: 1px solid white;
+header h1 {
+    font-size: 300%;
+}
+
+header h2 {
+    font-size: 200%;
 }
 
 main {
-    width: 80%;
+    width: 75%;
     margin: 2em auto;
 }
 
-#avatar {
-    border-radius: 100%;
-    max-width: 100%;
+main section h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+main section p {
+    line-height: 1.8;
+}
+
+#about img {
     float: left;
+    width: 170px;
+    border-radius: 100%;
     margin-right: 2em;
 }
