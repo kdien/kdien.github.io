@@ -1,19 +1,19 @@
 $(document).ready(function() {
-    // Add smooth scrolling to all links
-    $("nav a").on("click", function(event) {
+
+    $("a.nav-link").on("click", function(event) {
   
         if (this.hash !== "") {
 
             event.preventDefault();
     
             var target = $(this).attr("href");
-            var scrollToPosition = $(target).offset().top - 60;
+            var scrollToPosition = $(target).offset().top - 70;
     
-            // Use the number to specify milliseconds to reach the anchored point
             $("html").animate({"scrollTop": scrollToPosition}, 800, function() {
                 window.location.hash = target;
                 $("html").animate({"scrollTop": scrollToPosition}, 0);
+                history.pushState("", document.title, window.location.pathname + window.location.search);
             });
-        } // End if
+        }
     });
 });

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+body {
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: unset;
+}
+
+hr {
+    max-width: 50%;
+    height: 2px;
+    border: none;
+    border-style: hidden;
+    background: linear-gradient(to right, rgba(200, 200, 200, .1) 0%, #aaa 50%, rgba(200, 200, 200, .1) 100%);
+}
+
+header {
+    background: url('img/header-bg-blurred.jpg');
+    padding: 8em 1em;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 300%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+header h2 {
+    font-size: 200%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.navbar {
+    background: rgb(44, 44, 44);
+}
+
+.navbar .nav-link {
+    color: white;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(185, 185, 185);
+}
+
+.navbar .nav-link.active {
+    border-bottom: 1px solid white;
+}
+
+main {
+    margin: 2em 1.5em 0;
+}
+
+main .section-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
+main section h2 {
+    text-align: center;
+    padding-bottom: .5em;
+    font-size: 200%;
+}
+
+main section p, main section li {
+    line-height: 1.8;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#my-picture {
+    display: none;
+}
+
+#about img {
+    /* float: left; */
+    /* width: 160px; */
+    max-width: 100%;
+    border-radius: 100%;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+#contact-method a {
+    display: block;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+    background: rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+#contact-method a:hover {
+    transition: .7s;
+    background: rgb(175, 175, 175);
+}
+
+#work p {
+    text-align: center;
+}
+
+#work figure {
+    margin: 1.75em;
+}
+
+#work figcaption {
+    padding-top: 1em;
+}
+
+footer {
+    background: rgb(28, 28, 28);
+    padding: .1em;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    font-size: 90%;
+    color: white;
+}
+
+@media (min-width: 426px) {
+    .navbar .nav-link {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+}
+
+@media (min-width: 769px) {
+    main .section-content {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    #my-picture {
+        display: block;
+    }
+}
