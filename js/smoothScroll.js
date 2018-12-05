@@ -12,6 +12,8 @@ $(document).ready(function() {
             $("html").animate({"scrollTop": scrollToPosition}, 800, function() {
                 window.location.hash = target;
                 $("html").animate({"scrollTop": scrollToPosition}, 0);
+                
+                // Remove hash from URL on address bar
                 history.pushState("", document.title, window.location.pathname + window.location.search);
             });
         }

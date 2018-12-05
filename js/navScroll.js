@@ -6,9 +6,9 @@ $(document).ready(function() {
         $(window).scroll(function () {
 
             if ($(this).scrollTop() > 350)
-                $("nav").fadeIn();
+                $("nav").slideDown();
             else
-                $("nav").fadeOut();
+                $("nav").slideUp();
         });
     });
 });
