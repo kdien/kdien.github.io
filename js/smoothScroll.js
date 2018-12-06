@@ -9,9 +9,9 @@ $(document).ready(function() {
             var target = $(this).attr("href");
             var scrollToPosition = $(target).offset().top - 70;
     
-            $("html").animate({"scrollTop": scrollToPosition}, 800, function() {
+            $("html, body").animate({"scrollTop": scrollToPosition}, 800, function() {
                 window.location.hash = target;
-                $("html").animate({"scrollTop": scrollToPosition}, 0);
+                $("html, body").animate({"scrollTop": scrollToPosition}, 0);
                 
                 // Remove hash from URL on address bar
                 history.pushState("", document.title, window.location.pathname + window.location.search);
