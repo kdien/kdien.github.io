@@ -80,13 +80,6 @@ section img {
     display: none;
 }
 
-#about img {
-    max-width: 100%;
-    border-radius: 100%;
-    margin-right: 2em;
-    margin-bottom: 1em;
-}
-
 #contact-method a {
     display: block;
     padding: 1em;
