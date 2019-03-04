@@ -71,11 +71,6 @@ main section p, main section li {
     line-height: 1.8;
 }
 
-section img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
 #my-picture {
     display: none;
 }
@@ -92,22 +87,6 @@ section img {
 #contact-method a:hover {
     transition: .7s;
     background: rgb(175, 175, 175);
-}
-
-#skills .col-md {
-    margin: 1em 1em 0;
-}
-
-#work p {
-    text-align: center;
-}
-
-#work figure {
-    margin: 1.75em;
-}
-
-#work figcaption {
-    padding-top: 1em;
 }
 
 footer {
